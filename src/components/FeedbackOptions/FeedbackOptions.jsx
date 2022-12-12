@@ -9,7 +9,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
         <Container>
             {options.map((option, idx) => <Button key={idx} type="button" onClick={() => onLeaveFeedback(option)}><IconContext.Provider value={{
-                size: 20, color: "#2a2a2a"}}>{listOfIcons[idx]}</IconContext.Provider>{option}</Button>)}
+                size: 20 }}>{listOfIcons[idx]}</IconContext.Provider>{option}</Button>)}
         </Container>)    
 }
 
